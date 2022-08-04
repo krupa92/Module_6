@@ -6,11 +6,29 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct LunchView: View {
+    
+    @EnvironmentObject var model:ContentModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        if model.authorizationState == .notDetermined {
+            
+            // if undeterming show on boading
+            
+        } else if model.authorizationState == .authorizedAlways || model.authorizationState == .authorizedWhenInUse {
+            
+            // showhomeview
+            
+            HomeView()
+            
+        } else {
+            
+            //show denied view
+        }
+      
     }
 }
 
