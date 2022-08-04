@@ -11,6 +11,7 @@ struct HomeView: View {
     
     @EnvironmentObject var model:ContentModel
     @State var isMapShowing = false
+    @State var selectedBusiness:Business?
     
     var body: some View {
      
@@ -27,7 +28,11 @@ struct HomeView: View {
                             Image(systemName: "location")
                             Text("Sun Francisco")
                             Spacer()
-                            Text("Swich to map view")
+                            
+                            Button("Switch to the map View") {
+                                
+                                self.isMapShowing = true
+                            }
                         }
                         Divider()
                         
@@ -38,6 +43,12 @@ struct HomeView: View {
                 } else {
                     
                     //show map
+                    BusinessMap(selectedBusiness: $selectedBusiness)
+                        .ignoresSafeArea()
+                        .sheet(item: $selectedBusiness) { business  in
+                            
+                            BusinessDetail(business: business)
+                        }
                 }
             }
             

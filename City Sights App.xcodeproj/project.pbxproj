@@ -21,6 +21,7 @@
 		1CDB682F289A063500DBFF04 /* BussinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB682E289A063500DBFF04 /* BussinessSection.swift */; };
 		1CDB6831289A147800DBFF04 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB6830289A147800DBFF04 /* BusinessRow.swift */; };
 		1CDB6834289A321F00DBFF04 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB6833289A321F00DBFF04 /* BusinessDetail.swift */; };
+		1CDB6837289B51E600DBFF04 /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB6836289B51E600DBFF04 /* BusinessMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		1CDB682E289A063500DBFF04 /* BussinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessSection.swift; sourceTree = "<group>"; };
 		1CDB6830289A147800DBFF04 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 		1CDB6833289A321F00DBFF04 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		1CDB6836289B51E600DBFF04 /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1CDB68262899F2A100DBFF04 /* HomeView.swift */,
+				1CDB6835289B51C800DBFF04 /* Map */,
 				1CDB6829289A027300DBFF04 /* List */,
 				1CDB6832289A31E300DBFF04 /* Detail */,
 			);
@@ -167,6 +170,14 @@
 				1CDB6833289A321F00DBFF04 /* BusinessDetail.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		1CDB6835289B51C800DBFF04 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB6836289B51E600DBFF04 /* BusinessMap.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				1CDB6834289A321F00DBFF04 /* BusinessDetail.swift in Sources */,
 				1CDB682D289A04B100DBFF04 /* SectionHeader.swift in Sources */,
 				1C77AE5D2898ED120053B51B /* SearchBusiness.swift in Sources */,
+				1CDB6837289B51E600DBFF04 /* BusinessMap.swift in Sources */,
 				1C621FE828989F86005ACAE3 /* ContentModel.swift in Sources */,
 				1C77AE602898F3270053B51B /* Constants.swift in Sources */,
 				1CDB682F289A063500DBFF04 /* BussinessSection.swift in Sources */,
